@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -270,7 +271,7 @@ body {
     left: 18px;
     font-weight: 700;
     font-size: 24px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgba(54, 57, 88, 1);
 }
 
@@ -429,7 +430,7 @@ body {
     opacity: 1;
 }
 
-/*here a card ends*/
+/*here a card ends  1*/
 
 /*A card start here*/
 .card5 {
@@ -546,6 +547,7 @@ body {
     width: 78px;
     height: 82px;
 }
+
 /*cardoto 2 here*/
 
 .fit-card2 {
@@ -597,180 +599,196 @@ body {
 
 
 /*Media screen and templates*/
-    @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
-        body {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        #header-1 {
-            position: relative;
-            width: 100%;
-            height: 850px;
-        }
-    
-        .dots-container, .dot1-pic, .navigations {
-            visibility: hidden;
-        }
-        .png {
-            top: 27px;
-            left: 17px;
-            width: 192.75px;
-            height: 26px;
-        }
-    
-        .pg {
-            position: absolute;
-            top: 105px;
-            left: 17px;
-            width: 312px;
-            height: 144px;
-        }
-    
-        .pg h1 {
-            font-size: 60px;
-            line-height: 100%;
-            letter-spacing: 0%;
-
-        }
-    
-        .parg1 {
-            top: 229px;
-            left: 17px;
-            width: 295px;
-            height: 52px;
-        }
-    
-        .parg1 p {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-            letter-spacing: 0%;
-        }
-    
-        .buybtn-container {
-            position: absolute;
-            top: 305px;
-            left: 10px;
-            width: 170px;
-            height: 60px;
-        }
-
-        .yourphoto-container {
-            position: absolute;
-            top: 327px;
-            left: 1px;
-            background: transparent;
-        }
-
-        .my-pic {
-            position: absolute;
-            width: 327.05px;
-            height: 457px;
-            left: 39px;
-        }
-
-        #product-section, #total-section {
-            box-sizing: border-box;
-        }
-
-        #product-section {
-            height: 3700px;
-        }
-
-        #total-section {
-            height: 1300px;
-        }
-
-        .hed-1 {
-            left: 100px;
-        }
-        .hed-2 {
-            left: 100px;
-            top: 1890px;
-        }
-
-        .card1, .card2, .card3, .card4, .card5, .card6 {
-            left: 23px;
-        }
-
-        .card2 {
-            top: 720px;
-        }
-        .card3 {
-            top: 1290px;
-        }
-        .card4 {
-            top: 1970px;
-        }
-        .card5 {
-            top: 2550px;
-        }
-        .card6 {
-            top: 3130px;
-        }
-        .fit-card, .fit-card2, .fit-card3 {
-            position: relative;
-            top: 400px;
-            left: 27px;
-            height: 240px;
-            width: 343px;
-        }
-
-        .fit-card2 {
-            top: 430px;
-        }
-
-        .fit-card3 {
-            top: 460px;
-        }
-        .profoto {
-            position: absolute;
-            left: 55px;
-            top: 90px;
-        }
-
-        .profoto-img {
-            width: 292.67px;
-            height: 173px;
-        }
-
-        .hmimg {
-            position: absolute;
-            top: 24px;
-            left: 139px;
-            opacity: 1;
-        }
-        .fit-cd {
-            width: 206px;
-            height: 28px;
-            top: 120px;
-            left: 85px;
-        }
-        .fit-cd2 {
-            width: 206px;
-            height: 28px;
-            top: 120px;
-            left: 95px; 
-        }
-        .fit-cd3 {
-            width: 206px;
-            height: 28px;
-            top: 120px;
-            left: 85px;
-        }
-        .paijo, .paijo2, .paijo3 {
-            position: absolute;
-            width: 276px;
-            height: 52px;
-            top: 160px;
-            left: 50px;
-            text-align: center;
-        }
-        
-
+    body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
     }
+
+    #header-1 {
+        position: relative;
+        width: 100%;
+        height: 850px;
+    }
+
+    .dots-container, .dot1-pic, .navigations {
+        visibility: hidden;
+    }
+
+    .png {
+        top: 27px;
+        left: 17px;
+        width: 192.75px;
+        height: 26px;
+    }
+
+    .pg {
+        position: absolute;
+        top: 105px;
+        left: 17px;
+        width: 312px;
+        height: 144px;
+    }
+
+    .pg h1 {
+        font-size: 60px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .parg1 {
+        top: 229px;
+        left: 17px;
+        width: 295px;
+        height: 52px;
+    }
+
+    .parg1 p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0%;
+    }
+
+    .buybtn-container {
+        position: absolute;
+        top: 305px;
+        left: 10px;
+        width: 170px;
+        height: 60px;
+    }
+
+    .yourphoto-container {
+        position: absolute;
+        top: 327px;
+        left: 1px;
+        background: transparent;
+    }
+
+    .my-pic {
+        position: absolute;
+        width: 327.05px;
+        height: 457px;
+        left: 39px;
+    }
+
+    #product-section, #total-section {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    #product-section {
+        height: 3700px;
+    }
+
+    #total-section {
+        height: 1300px;
+    }
+
+    .hed-1 {
+        left: 100px;
+    }
+
+    .hed-2 {
+        left: 100px;
+        top: 1890px;
+    }
+
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+        left: 23px;
+    }
+
+    .card2 {
+        top: 720px;
+    }
+
+    .card3 {
+        top: 1290px;
+    }
+
+    .card4 {
+        top: 1970px;
+    }
+
+    .card5 {
+        top: 2550px;
+    }
+
+    .card6 {
+        top: 3130px;
+    }
+
+    .fit-card, .fit-card2, .fit-card3 {
+        position: relative;
+        top: 400px;
+        left: 27px;
+        height: 240px;
+        width: 343px;
+        max-width: calc(100% - 27px);
+    }
+
+    .fit-card2 {
+        top: 430px;
+    }
+
+    .fit-card3 {
+        top: 460px;
+    }
+
+    .profoto {
+        position: absolute;
+        left: 55px;
+        top: 90px;
+    }
+
+    .profoto-img {
+        width: 292.67px;
+        height: 173px;
+    }
+
+    .hmimg {
+        position: absolute;
+        top: 24px;
+        left: 139px;
+        opacity: 1;
+    }
+
+    .fit-cd {
+        width: 206px;
+        height: 28px;
+        top: 120px;
+        left: 85px;
+    }
+
+    .fit-cd2 {
+        width: 206px;
+        height: 28px;
+        top: 120px;
+        left: 95px;
+    }
+
+    .fit-cd3 {
+        width: 206px;
+        height: 28px;
+        top: 120px;
+        left: 85px;
+    }
+
+    .paijo, .paijo2, .paijo3 {
+        position: absolute;
+        width: 276px;
+        height: 52px;
+        top: 160px;
+        left: 50px;
+        text-align: center;
+    }
+}
     
